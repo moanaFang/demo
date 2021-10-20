@@ -1,0 +1,282 @@
+body {
+    background: #256AC4;
+}
+
+
+
+
+
+/* 排版 */
+.container {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* 文字 */
+h1,h2,h3,h4,a, p  {
+    color: white;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+}
+#sidebarNav, h2, h2 + p,
+#discount, #copyright {
+    text-align: center;
+}
+#discount .info {
+    margin: auto;
+}
+#discount h4 {
+    font-size: 22px;
+}
+#discount p {
+    font-size: 26px;
+}
+#discount span {
+    color: #E1ACE1;
+    font-size: 36px;
+}
+
+
+
+/* 按鈕 */
+.btn-shop {
+    border: 0px;
+    border-radius: 25% / 50%;
+    background-color: #fff;
+    color: #CFD1FF;
+    text-align: center;
+} 
+.btn-shop:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.btn-more {
+    display: block;
+    border: 1px solid #fff;
+    text-align: center;
+}
+.btn-more:hover {
+    background-color: #fff;
+    color: #CFD1FF;
+    border: 1px solid transparent;
+}
+.hot {
+    background-color: #DB436C;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+
+
+
+
+/* 圖片 */
+.icon {
+    width: 20px;
+    height: 20px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.img, .background {
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/* 背景顏色 */
+nav a {
+    display: block;
+}
+#mainNav .container , #sidebarNav .container {
+    height: 80px;
+}
+#mainNav {
+    padding-top: 10px;
+    background: #050426;
+}
+#sidebarNav {
+    background: #6697F7;
+}
+.product {
+    background: #C1C4FE;
+}
+
+
+
+
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+/* nav */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+nav > div:first-child::before {
+    content: "";
+    display: block;
+    height: 30px;
+}
+#hamburger-open, #logo, #mainNav label, .member, .cart,
+#mainNav label > .search, #mainNav label > input,
+#mainNav .icon, #shopCount,  #mainNav  #mainNavLink
+{
+    float: left;
+}
+
+
+
+/* herosession */
+.slides {
+    margin: 0;
+    background-color: #eee;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.slide {
+    width: inherit;
+    height: inherit;
+    padding: 0;
+    margin: 0;
+    flex-shrink: 0;
+    transition: .5s transform ease-in-out;
+}
+.slide:nth-of-type(1) {
+    background-color: #f2e205;
+}
+.slide:nth-of-type(2) {
+    background-color: #f25c05;
+    left: 100%;
+}
+.slide:nth-of-type(3) {
+    background-color: #495FBC;
+    left: 200%;
+}
+.controls-visible {
+    width: 100%;
+    position: absolute;
+    bottom: 12px;
+    text-align: center;
+}
+.controls-visible label {
+    display: inline-block;
+    background: #AEB0DE;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+input[type="radio"] {
+    z-index: 100;
+    position: relative;
+    display: none;
+}
+.slides input[type="radio"]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1) {
+    background-color: #fff;
+}
+.slides input[type="radio"]:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2) {
+    background-color: #fff;
+}
+.slides input[type="radio"]:nth-of-type(3):checked ~ .controls-visible label:nth-of-type(3) {
+    background-color: #fff;
+}
+.slides input[type="radio"]:nth-of-type(1):checked ~ .slide {
+    transform: translate(0%);  
+}
+.slides input[type="radio"]:nth-of-type(2):checked ~ .slide {
+    transform: translate(-100%);  
+}
+.slides input[type="radio"]:nth-of-type(3):checked ~ .slide {
+    transform: translate(-200%);  
+}
+
+
+
+
+
+/* decoration */
+ .decoration .img{
+    float: right;
+}
+
+
+
+
+
+#daily .function {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+
+
+
+
+/* footer */
+#pageInfo .col-lg-4 {
+    float: left;
+}
+#pageInfo a {
+    display: block;
+}
+#pageInfo #social-icon .icon {
+    padding-top: 10px;
+}
+#pageInfo #social-icon {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+#pageInfo #social-icon .icon {
+    padding-right: 20px;
+}
+.btn-subscription {
+    border: 3px solid #AEB0DE;
+    background: transparent;
+    color: #AEB0DE;
+}
+.btn-subscription:hover {
+    border: 3px solid transparent;
+    background: #AEB0DE;
+    color: #050426;
+}
+
+
+
+
+
+/* footer */
+#pageInfo {
+    background-color: #050426;
+    padding: 10px;
+}
+footer #copyright {
+    background-color: #CFD1FF;
+}
+footer #copyright p {
+    color: #050426;
+}

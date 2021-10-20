@@ -1,0 +1,150 @@
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.125rem;
+}
+p, a, .classification {
+    font-size: 16px;
+}
+.date {
+    font-size: 0.75rem;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+a {
+    color: black;
+}
+a:hover, .modal-body label {
+    color: #DD1C6D;
+}
+header #logo {
+    height: 140px;
+}
+.logo img {
+    width: 256px;
+}
+nav {
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+}
+#sideList {
+    width: 350px;
+    height: auto;
+    top: 0;
+    z-index: 2;
+    display: none;
+}
+#sideList .logo {
+    width: 200px;
+}
+.modal-body {
+    position: relative;
+}
+.modal-body label {
+    border-bottom: 2px solid #DD1C6D;
+    margin-bottom: 30px;
+}
+.modal-body input {
+    margin-bottom: -2px;
+    border: transparent;
+    border-bottom: 2px solid black;
+}
+.tag {
+    display: block;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    background-color: #DD1C6D;
+}
+.tag:hover {
+    color: white;
+    text-decoration: none;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+}
+.title #cosmetics::after {
+    position: absolute;
+    bottom: -10%;
+    left: calc(50% - 100px/2);
+    content: "";
+    width: 100px;
+    height: 7px;
+    background-color: #111111;
+}
+.title #cosmetics::before {
+    position: absolute;
+    bottom: -10%;
+    left: calc(50% - 100px/2);
+    content: "";
+    width: 30px;
+    height: 7px;
+    background-color: #DD1C6D;
+    z-index: 1;
+}
+footer {
+    background-color: #F9F9FB;
+}
+footer ul {
+    width: 60%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.card {
+    flex-direction: row;
+    border: 0;
+}
+#herosession .card {
+    flex-direction: column;
+}
+.classification {
+    width: 200px;
+    padding: 3px;
+    margin: auto;
+    border: 1px solid #DD1C6D;
+    border-radius: 30px;
+    text-align: center;
+    color: #DD1C6D;
+}
+.classification span {
+    border-right: 1px solid #DD1C6D;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+#goTop {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+}
+@media screen and (max-width: 992px) {
+    .card {
+        flex-direction: column;
+        border: 0;
+    }
+    nav {
+        height: 40px;
+        position: relative;
+        justify-content: center;
+    }
+    nav #hamburger-open {
+        position: absolute;
+        left: 20px;
+        bottom: 110px;
+    }
+    nav .search {
+        position: absolute;
+        right: 20px;
+        bottom: 110px;
+    }
+}

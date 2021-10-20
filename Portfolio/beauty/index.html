@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./libary/bootstrap-4.2.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Beauty</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container-fluid px-0 text-center position-relative">
+            <a class="logo d-block py-5" href="#">
+                <img src="./img/icon/logo.svg">
+            </a>
+            <nav class="d-flex border border-dark px-4">
+                <div class="social-icon d-flex">
+                    <a id="hamburger-open" class="icon ml-3" href="#">
+                        <img src="./img/icon/hamburger-open.svg">
+                    </a>
+                    <a class="icon d-lg-block d-none ml-3" href="#">
+                        <img src="./img/icon/facebook.svg">
+                    </a>
+                    <a class="icon d-lg-block d-none ml-3" href="#">
+                        <img src="./img/icon/youtube.svg">
+                    </a>
+                    <a class="icon d-lg-block d-none ml-3" href="#">
+                        <img src="./img/icon/Instagram.svg">
+                    </a>
+                    <a class="icon d-lg-block d-none ml-3" href="#">
+                        <img src="./img/icon/line.svg">
+                    </a>
+                    <a class="icon d-lg-block d-none ml-3" href="#">
+                        <img src="./img/icon/google.svg">
+                    </a>
+                </div>
+                <ul class="links d-flex">
+                    <li>
+                        <a class="d-lg-block d-none ml-3 text-decoration-none" href="#">美妝</a>
+                    </li>
+                    <li>
+                        <a  class="d-lg-block d-none ml-3 text-decoration-none" href="#">時尚</a>
+                    </li>
+                    <li>
+                        <a  class="d-lg-block d-none ml-3 text-decoration-none" href="#">娛樂</a>
+                    </li>
+                    <li>
+                        <a  class="d-lg-block d-none ml-3 text-decoration-none" href="#">生活</a>
+                    </li>
+                    <li>
+                        <a  class="d-lg-block d-none ml-3 text-decoration-none" href="#">活動</a>
+                    </li>
+                    <li>
+                        <a  class="d-lg-block d-none ml-3 text-decoration-none" href="#">BEAUTY shop</a>
+                    </li>
+                    <li>
+                        <a  class="d-lg-block ml-3 text-decoration-none" href="#">#防呆美貌相</a>
+                    </li>
+                    <li>
+                        <a  class="d-lg-block ml-3 text-decoration-none" href="#">#五倍券攻略</a>
+                    </li>
+                </ul>
+
+                <!-- Button trigger modal -->
+                <div type="button" class="icon search" data-toggle="modal" data-target="#exampleModalCenter">
+                    <img src="./img/icon/search.svg">
+                </div>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <label class="h4" for="search">
+                                SEARCH 
+                                <input class="" id="search" type="text">
+                            </label>
+                            <div class="tags d-flex flex-wrap">
+                                <a class="tag" href="#">#全家買一送一</a>
+                                <a class="tag" href="#">#心理測驗</a>
+                                <a class="tag" href="#">#711燕麥奶咖啡買一送一</a>
+                                <a class="tag" href="#">#田寵劇</a>
+                                <a class="tag" href="#">#星巴克買一送一</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+            <nav id="sideList" class="position-absolute bg-light">
+                <div class="border border-dark border-left-0 border-right-0 border-top-0">
+                    <a id="hamburger-close" class="logo d-block d-flex align-items-center py-4 mx-auto" href="#">
+                        <img class="mr-3" src="./img/icon/logo.svg">
+                        <img class="icon" src="./img/icon/hamburger-close.svg">
+                    </a>
+                </div>
+                <ul class="text-left">
+                    <li class="pl-4 border border-dark border-left-0 border-right-0 border-top-0">
+                        <a class="d-block p-2  text-decoration-none" href="#">
+                            BEAUTY SHOP
+                        </a>
+                    </li>
+                    <li class="pl-4 border border-dark border-left-0 border-right-0 border-top-0">
+                        <a class="d-block p-2  text-decoration-none" href="#">
+                            美妝
+                        </a>
+                    </li>
+                    <li class="pl-4 border border-dark border-left-0 border-right-0 border-top-0">
+                        <a class="d-block p-2  text-decoration-none" href="#">
+                            時尚
+                        </a>
+                    </li>
+                    <li class="pl-4 border border-dark border-left-0 border-right-0 border-top-0">
+                        <a class="d-block p-2  text-decoration-none" href="#">
+                            娛樂
+                        </a>
+                    </li>
+                    <li class="pl-4 border border-dark border-left-0 border-right-0 border-top-0">
+                        <a class="d-block p-2  text-decoration-none" href="#">
+                            生活
+                        </a>
+                    </li>
+                    <li class="pl-4 border border-dark border-left-0 border-right-0 border-top-0">
+                        <a class="d-block p-2  text-decoration-none" href="#">
+                            名人專欄
+                        </a>
+                    </li>
+                    <li class="pl-4 border border-dark border-left-0 border-right-0 border-top-0">
+                        <a class="d-block p-2  text-decoration-none" href="#">
+                            新品速遞
+                        </a>
+                    </li>
+                    <li class="pl-4 border border-dark border-left-0 border-right-0 border-top-0">
+                        <a class="d-block p-2  text-decoration-none" href="#">
+                            活動
+                        </a>
+                    </li>
+                    <li class="pl-4 border border-dark border-left-0 border-right-0 border-top-0">
+                        <a class="d-block p-2  text-decoration-none" href="#">
+                            防呆美貌相
+                        </a>
+                    </li>
+                    <li class="pl-4 border border-dark border-left-0 border-right-0 border-top-0">
+                        <a class="d-block p-2  text-decoration-none " href="#">
+                            美人大偵探
+                        </a>
+                    </li>
+                    <li class="pl-4 border border-dark border-left-0 border-right-0 border-top-0">
+                        <a class="d-block p-2  text-decoration-none " href="#">
+                            熱搜王
+                        </a>
+                    </li>
+                    <li class="pl-4 border border-dark border-left-0 border-right-0 border-top-0">
+                        <a class="d-block p-2  text-decoration-none " href="#">
+                            懶人包大集合
+                        </a>
+                    </li>
+                    <li class="pl-4 border border-dark border-left-0 border-right-0 border-top-0">
+                        <a class="d-block p-2  text-decoration-none " href="#">
+                            BEAUTY TV
+                        </a>
+                    </li>
+                    <li class="pl-4 border border-dark border-left-0 border-right-0 border-top-0">
+                        <a class="d-block p-2  text-decoration-none " href="#">
+                            大美人
+                        </a>
+                    </li>
+                    <li class="pl-4 border border-dark border-left-0 border-right-0 border-top-0">
+                        <a class="d-block p-2  text-decoration-none " href="#">
+                            聯絡我們
+                        </a>
+                    </li>
+                </ul>
+                <div class="social-icon d-flex justify-content-center pb-4">
+                    <a class="icon d-lg-block d-none ml-3" href="#">
+                        <img src="./img/icon/facebook.svg">
+                    </a>
+                    <a class="icon d-lg-block d-none ml-3" href="#">
+                        <img src="./img/icon/youtube.svg">
+                    </a>
+                    <a class="icon d-lg-block d-none ml-3" href="#">
+                        <img src="./img/icon/Instagram.svg">
+                    </a>
+                    <a class="icon d-lg-block d-none ml-3" href="#">
+                        <img src="./img/icon/line.svg">
+                    </a>
+                    <a class="icon d-lg-block d-none ml-3" href="#">
+                        <img src="./img/icon/google.svg">
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="title mt-5">
+        <div id="cosmetics" class="border border-top-0 border-left-0 border-right-0 border-dark  p-3 text-center position-relative">COSMETICS</div>
+        <h1 class="text-center p-3">美妝</h1>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/herosession/奢華唇萃.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/herosession/一抹即亮.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/herosession/植村秀周年慶.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- <div class="container">
+        <div id="herosession" class="row justify-content-center">
+            <div class="card col-sm-12  col-lg-3  text-center my-2 mx-2">
+                <img src="./img/herosession/奢華唇萃.jpg">
+                <div class="info mt-3">
+                    <div class="classification"><span>彩妝</span> by Betty</div>
+                    <h2 class="mt-3">
+                        GA奢華唇萃全新訂製浪漫系列，快趁週年慶全包色～
+                    </h2>
+                    <div class="date mt-5">2021-10-01</div>
+                </div>
+            </div>
+            <div class="card col-sm-12  col-lg-3  text-center my-2 mx-2">
+                <img src="./img/herosession/一抹即亮.jpg">
+                <div class="info mt-3">
+                    <div class="classification"><span>保養</span> by Bonnie</div>
+                    <h2 class="mt-3">
+                        「一抹即亮、嫩到手滑」靠卸妝小紅水達標！
+                    </h2>
+                    <div class="date mt-5">2021-10-01</div>
+                </div>
+            </div>
+            <div class="card col-sm-12  col-lg-3  text-center my-2 mx-2">
+                <img src="./img/herosession/植村秀周年慶.jpg">
+                <div class="info mt-3">
+                    <div class="classification"><span>彩妝</span> by Betty</div>
+                    <h2 class="mt-3">
+                        植村秀週年慶預購會太甜！粉底省700、潔顏油省3300
+                    </h2>
+                    <div class="date mt-5">2021-10-01</div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="card d-flex text-left my-2">
+            <div class="col-sm-12 col-lg-6">
+                <img src="./img/木質調唇膏.jpg">
+            </div>
+            <div class="info col-sm-12 col-lg-6 mt-3">
+                <div class="classification"><span>彩妝</span> by 編輯團</div>
+                <a class="text-decoration-none" href="#">
+                    <h2 class="mt-3">
+                        TOM FORD「木質調唇膏」強大溫柔裸棕色，打造全智賢、申敏兒＂大女主時髦＂知性感！
+                    </h2>
+                </a>
+                <p>
+                    TOM FORD唇膏每出新色總是在IG、Dcard上引起高度討論！2021秋冬TOM FORD首次挑戰木質調唇色，將亞洲黃肌很害怕的裸棕色，完美研發出4隻兼具時尚又顯白的木質唇色...
+                </p>
+                <div class="date mt-5">2021-10-01</div>
+            </div>
+        </div>
+        <div class="card d-flex text-left my-2">
+            <img class="col-sm-12 col-lg-6" src="./img/話題化妝水.jpg">
+            <div class="info col-sm-12 col-lg-6 mt-3">
+                <div class="classification"><span>保養</span> by Janine</div>
+                <a class=" text-decoration-none" href="#">
+                    <h2 class="mt-3">
+                        編輯評比2021話題化妝水12款！IPSA流金水、嬌蘭神蜜水，編輯心中必收神水是這款
+                    </h2>
+                </a>
+                <p class="mt-3">
+                    2021話題化妝水BEAUTY實測評比！化妝水是保養階段不可缺少的品項，簡單、但其實是保養的基礎，用對化妝水不僅可以幫助肌膚補水保濕、還幫助代謝角質，讓後續保養...
+                </p>
+                <div class="date mt-5">2021-10-01</div>
+            </div>
+        </div>
+        <div class="card d-flex text-left my-2">
+            <img class="col-sm-12 col-lg-6" src="./img/雪炫日常瘦身食譜.jpg">
+            <div class="info col-sm-12 col-lg-6 mt-3">
+                <div class="classification"><span>瘦身</span> by 編集團</div>
+                <a class=" text-decoration-none" href="#">
+                    <h2 class="mt-3">
+                        連四年獲「最想擁有的名品身材」！AOA 雪炫「日常瘦身食譜」公開，不捱餓也能輕鬆瘦
+                    </h2>
+                </a>
+                <p class="mt-3">
+                    女團AOA的雪炫，擁有168的高挑身材，加上初戀系的清純臉蛋，受到無數粉絲喜愛！其實他出道初期，體重大概落在60kg，憑藉著飲食管理及建立運動習慣，讓他瘦到四字...
+                </p>
+                <div class="date mt-5">2021-10-01</div>
+            </div>
+        </div>
+        <div class="card d-flex text-left my-2">
+            <img class="col-sm-12 col-lg-6" src="./img/彩妝留白.jpg">
+            <div class="info col-sm-12 col-lg-6 mt-3">
+                <div class="classification"><span>彩妝</span> by Janine</div>
+                <a class=" text-decoration-none" href="#">
+                    <h2 class="mt-3">
+                        化妝師公開「彩妝留白」重點！不同五官&臉型適合妝容減法，這樣畫減齡顯嫩、還顯小臉
+                    </h2>
+                </a>
+                <p class="mt-3">
+                    眼妝、唇彩、眉毛等全臉的妝容中，化妝師建議有時候可以凸顯局部妝容就好，單純強調腮紅及唇彩、眼妝淡化或是乾脆不畫，也可以強調眉毛及眼妝、弱化唇彩，彩妝留...
+                </p>
+                <div class="date mt-5">2021-10-01</div>
+            </div>
+        </div>
+        <div class="card d-flex text-left my-2">
+            <img class="col-sm-12 col-lg-6" src="./img/小紅水.jpg">
+            <div class="info col-sm-12 col-lg-6 mt-3">
+                <div class="classification"><span>保養</span> by Celine Lin</div>
+                <a class=" text-decoration-none" href="#">
+                    <h2 class="mt-3">
+                        日本美容師「熨斗級眼周按摩法」公開！KO細紋、黑眼圈超有感，同場加映人氣眼唇霜推薦
+                    </h2>
+                </a>
+                <p class="mt-3">
+                    原來就是黑眼圈、眼袋淚溝、細紋在扯後腿！！可是已經每天都很認真擦眼霜了，為什麼依舊看不見成效呢？很有可能是按摩手法出了問題~編輯這次為大家帶來日本美容...
+                </p>
+                <div class="date mt-5">2021-10-01</div>
+            </div>
+        </div>
+        <div class="card d-flex text-left my-2">
+            <img class="col-sm-12 col-lg-6" src="./img/粉紅眼影畫法.jpg">
+            <div class="info col-sm-12 col-lg-6 mt-3">
+                <div class="classification"><span>彩妝</span> by Betty</div>
+                <a class=" text-decoration-none" href="#">
+                    <h2 class="mt-3">
+                        不顯腫「粉色眼影畫法」公開！這樣打底消腫又清透，S型眼線放大雙眼2倍超有神
+                    </h2>
+                </a>
+                <p class="mt-3">
+                    為什麼我每次畫了粉色眼妝看起都泡泡眼，但是IG上的女明星都是滿滿純欲感，其實關鍵就在於選錯眼影打底色和收斂色，而且就連眼線畫法也藏有玄機，以下「不顯腫粉...
+                </p>
+                <div class="date mt-5">2021-10-01</div>
+            </div>
+        </div>
+    </div>
+    <a id="goTop" href="#header">
+        <img src="./img/icon/top.svg">
+    </a>
+    <footer class="mt-5 py-5">
+        <a class="logo d-block text-center py-4 border border-top-0 border-left-0 border-right-0 border-dark" href="#">
+            <img src="./img/icon/logo.svg">
+        </a>
+        <div class="social-icon d-flex justify-content-center py-4">
+            <a class="icon ml-3" href="#">
+                <img src="./img/icon/facebook.svg">
+            </a>
+            <a class="icon ml-3" href="#">
+                <img src="./img/icon/youtube.svg">
+            </a>
+            <a class="icon ml-3" href="#">
+                <img src="./img/icon/Instagram.svg">
+            </a>
+            <a class="icon ml-3" href="#">
+                <img src="./img/icon/line.svg">
+            </a>
+            <a class="icon ml-3" href="#">
+                <img src="./img/icon/google.svg">
+            </a>
+        </div>
+        <ul class="d-flex justify-content-center">
+            <li class="border border-top-0 border-left-0 border-bottom-0 border-dark px-2">
+                <a class=" text-decoration-none" href="#">公司介紹</a>
+            </li>
+            <li class="border border-top-0 border-left-0 border-bottom-0 border-dark px-2">
+                <a class=" text-decoration-none" href="#">人才招募</a>
+            </li>
+            <li class="border border-top-0 border-left-0 border-bottom-0 border-dark px-2">
+                <a class=" text-none-decoration" href="#">購買雜誌</a>
+            </li>
+            <li class="border border-top-0 border-left-0 border-bottom-0 border-dark px-2">
+                <a class=" text-decoration-none" href="#">聯絡我們</a>
+            </li>
+            <li class="border border-top-0 border-left-0 border-bottom-0 border-dark px-2">
+                <a class=" text-decoration-none" href="#">版權宣告</a>
+            </li>
+            <li class="border border-top-0 border-left-0 border-bottom-0 border-dark px-2">
+                <a class=" text-decoration-none" href="#">隱私權政策</a>
+            </li>
+        </ul>
+        <div class="text-center">
+            COPYRIGHT C EVER BEAUTY Publication, Inc
+        </div>
+
+        
+    </footer>
+</body>
+<script src="./libary/jquery3.6.0.js"></script>
+<script src="./libary/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+<script src="./js/index.js"></script>
+</html>

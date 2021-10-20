@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-wrap {
+            margin: 60px 0;
+        }
+        .box {
+            width: 30%;
+            height: 100px;
+            margin: 10px;
+            background-color: burlywood;
+        }
+        .box1 {
+            background: rgb(236, 188, 248);
+            transition: transform .5s;
+        }
+        /* .box-wrap:hover .box1 {
+            transform: translateY(100px);
+        /* } */
+    </style>
+</head>
+<body>
+    <div class="box-wrap">
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+    </div>
+    <div class="box-wrap">
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+    </div>
+    <div class="box-wrap">
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+    </div>
+</body>
+<script>
+    const box1 = document.querySelectorAll(".box1");
+    const box2 = document.querySelectorAll(".box2");
+    // box2.style.transition = "transform .6s";
+    for(let i=0; i<box1.length; i++) {
+        box1[i].addEventListener('mouseover', () => {
+            box2[i].style.transform = "translateY(-10px)";
+        })
+        box1[i].addEventListener('mouseleave', () => {
+            box2[i].style.transform = "translateY(10px)";
+        })
+    }
+</script>
+</html>

@@ -1,0 +1,79 @@
+@media screen and (max-width: 768px) {
+    /* 排版 */
+    .col-md-1 {
+        width: 8.3%;
+    }
+    .col-md-2 {
+        width: 16.6%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-4 {
+        width: 33.3%;
+    }
+    .col-md-5 {
+        width: 41.6%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-7 {
+        width: 58.3%;
+    }
+    .col-md-8 {
+        width: 66.6%;
+    }
+    .col-md-9 {
+        width: 74.9%;
+    }
+    .col-md-10 {
+        width: 83.3%;
+    }
+    .col-md-11 {
+        width: 91.6%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+    /* section1 */
+    #herosession > img:nth-of-type(1) {
+        width: 542px;
+        padding: 100px 0 10px 0;
+    }
+    #herosession > :nth-of-type(2) {
+        width: 250px;
+        height: 300px;
+    }
+
+    /* section2 */
+    #about > .container {
+        margin: 0;
+    }
+    #about > .container > h2 {
+        padding: 20px 0;
+    }
+    #about > .container > h3 {
+        padding: 40px 0;
+    }
+    #about {
+        padding: 150px 0 200px 0;
+        margin-top: 100px;
+    }
+    #about > .img:nth-child(1) {
+        width: 95%;
+        height: 212px;
+        top: -50px;
+    }
+    #about > .img:nth-of-type(3) {
+        width: 100%;
+    }
+    #about > .img:nth-of-type(4) {
+        width: 90%;
+        bottom: -150px
+    }
+    /* section3, div1*/
+    #taiyaki > .container > div:nth-of-type(1) > div:nth-of-type(2) {
+        text-align: right;
+    }
+}
