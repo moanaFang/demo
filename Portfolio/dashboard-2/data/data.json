@@ -1,0 +1,21 @@
+{
+    "statistics" : [
+        {
+            "iconFa": "fa-school",
+            "title": "Schools",
+            "total": "58"
+        },{
+            "iconFa": "fa-chalkboard-teacher",
+            "title": "Teachers",
+            "total": "1667"
+        },{
+            "iconFa": "fa-user-graduate",
+            "title": "Students",
+            "total": "1730"
+        },{
+            "iconFa": "fa-users",
+            "title": "Parents",
+            "total": "1807"
+        }
+    ]
+}

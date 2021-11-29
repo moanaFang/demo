@@ -1,0 +1,96 @@
+/* 排版 */
+#dashboard {
+    font-size: 14px;
+}
+#dashboard,
+#dashboard > main > .container > .primary-title,
+#dashboard > main > .container > .sub-statistics {
+    display: flex;
+}
+/*nav*/
+#dashboard > header {
+    width: 15%;
+    background-color: #312B57;
+}
+#dashboard > header > nav {
+    float: right;
+    width: 80%;
+    height: 100%;
+    background-color: #5F5490;
+}
+#dashboard > header > nav > ul  li {
+    display: block;
+    padding: 20px;
+    margin: 20px 0 20px 10px;
+    color: white;
+}
+
+/*main*/
+#dashboard > main > .container {
+    padding: 20px 40px;
+}
+#dashboard > main > .container > .primary-title {
+    font-weight: 900;
+}
+#dashboard > main > .container  > .primary-title,
+#dashboard > main > .container > .sub-statistics {
+    margin-bottom: 20px;
+}
+#dashboard > main  {
+    width: 85%;
+    height: 100vh;
+    background-color: #F1EDF4;
+}
+#dashboard > main > .container > .primary-title,
+#dashboard > main > .container > .sub-statistics > div,
+#dashboard > main > .container > .mul-window {
+    background-color: white;
+}
+#dashboard > main > .container > .primary-title {
+    justify-content: space-between;
+    padding: 10px;
+}
+#dashboard > main > .container > .sub-statistics > div {
+    width: 25%;
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 5px;
+}
+#dashboard > main > .container > .sub-statistics > div:nth-of-type(1) {
+    border-left: 10px #F7A197 solid;
+}
+#dashboard > main > .container > .sub-statistics > div:nth-of-type(2) {
+    border-left: 10px rgb(113, 50, 240) solid;
+}
+#dashboard > main > .container > .sub-statistics > div:nth-of-type(3) {
+    border-left: 10px #FFC000 solid;
+}
+#dashboard > main > .container > .sub-statistics > div:nth-of-type(4) {
+    border-left: 10px #34A25A solid;
+}
+#dashboard > main > .container >.sub-statistics i {
+    font-size: 30px;
+}
+#dashboard > main > .container > .sub-statistics > div:nth-of-type(1)  i {
+    color: #F7A197;
+}
+#dashboard > main > .container > .sub-statistics > div:nth-of-type(2)  i {
+    color: rgb(113, 50, 240);
+}
+#dashboard > main > .container > .sub-statistics > div:nth-of-type(3)  i {
+    color: #FFC000;
+}
+#dashboard > main > .container > .sub-statistics > div:nth-of-type(4)  i {
+    color: #34A25A;
+}
+#dashboard > main > .container > .sub-statistics i ~ div {
+    float: right;
+}
+#dashboard > main > .container > .sub-statistics .count {
+    font-size: 20px;
+    font-weight: 900;
+}
+#dashboard > main > .container > .mul-window {
+    height: 35vw;
+    margin: auto;
+}

@@ -62,12 +62,12 @@ header > nav {
     justify-content: space-between;
     position: fixed;
     z-index: 2;
-    color: #EB3300;
+    color: #771414;
 }
 header > nav > #hamburger .line {
     width: 40px;
     height: 10px;
-    border-top: 2px solid #EB3300;
+    border-top: 2px solid #771414;
 }
 
 /* section1 */

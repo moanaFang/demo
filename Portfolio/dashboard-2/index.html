@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/dashboard.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' integrity='sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==' crossorigin='anonymous'/>
+</head>
+<body id="dashboard">
+    <header>
+        <nav>
+            <ul>
+                <li>Dashboard</li>
+                <li>Students</li>
+                <li>Teachers</li>
+                <li>Parents</li>
+                <li>Events</li>
+                <li>Exams</li>
+                <li>Assetstart</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="primary-title">
+                <p>Welecome to Other Level's Smart Schools</p>
+                <p>School Year 2021-2022</p>
+            </div>
+            <div class="sub-statistics"></div>
+            <div class="mul-window"></div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js' integrity='sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==' crossorigin='anonymous'></script>
+    <script>
+        let data = '';
+        $(function() {
+            $.ajax({
+                url: 'http://localhost:3000/statistics',
+                method: 'get',
+                dataType: 'json',
+                data: {}
+            }).done(function(res) {
+                // console.log(res);
+                res.forEach(function(statistic) {
+                    data += 
+                    `
+                    <div>
+                        <i class="fas ${statistic.iconFa}"></i>
+                        <div>
+                            <div class="title">${statistic.title}</div>
+                            <div class="count">${statistic.total}</div>
+                        </div>
+                    </div>
+                    `
+                });
+                $('.sub-statistics').append(data);
+            })
+        })
+    </script>
+</body>
+</html>
