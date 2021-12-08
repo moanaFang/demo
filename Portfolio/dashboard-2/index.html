@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./style/dashboard.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' integrity='sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==' crossorigin='anonymous'/>
 </head>
-<body id="dashboard">
+<body id="dashboard" class="row">
     <header>
         <nav>
             <ul>
@@ -25,19 +25,38 @@
     </header>
     <main>
         <div class="container">
-            <div class="primary-title">
+            <div class="primary-title row">
                 <p>Welecome to Other Level's Smart Schools</p>
                 <p>School Year 2021-2022</p>
             </div>
-            <div class="sub-statistics"></div>
-            <div class="mul-window"></div>
+            <div class="sub-statistics row"></div>
+            <div class="mul-window">
+                <div class="calendar">
+                    <h2>Calendar Attendance</h2>
+                    <ul class="monthes"></ul>
+                    <ul class="days"></ul>
+                </div>
+                <div class="educational">
+                    <h2>Educational stage</h2>
+                    <ul></ul>
+                    <div class="barChart"></div>
+                </div>
+                <div class="activities">
+                    <h2>Activities & Events</h2>
+                    <a href="#Activities">View All</a>
+                    <ul></ul>
+                </div>
+                <div class="rank"></div>
+            </div>
         </div>
     </main>
     <script src="index.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js' integrity='sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==' crossorigin='anonymous'></script>
     <script>
+        // statistics
         let data = '';
         $(function() {
+            // statistics
             $.ajax({
                 url: 'http://localhost:3000/statistics',
                 method: 'get',
@@ -47,19 +66,73 @@
                 // console.log(res);
                 res.forEach(function(statistic) {
                     data += 
-                    `
-                    <div>
+                    `<div>
                         <i class="fas ${statistic.iconFa}"></i>
                         <div>
                             <div class="title">${statistic.title}</div>
                             <div class="count">${statistic.total}</div>
                         </div>
-                    </div>
-                    `
+                    </div>`
                 });
                 $('.sub-statistics').append(data);
             })
+
+            // educational
+            $.ajax({
+                url: 'http://localhost:3000/educational',
+                method: 'get',
+                dataType: 'json',
+                data: {}
+            }).done(function(res) {
+                data = '';
+                res.forEach(function(educational) {
+                    data += 
+                    `<li>
+                            <span class="color"></span>
+                            <div>
+                                <span>${educational.school}</span>
+                                <span>${educational.quantity}</span>
+                            </div>
+                    </li>`
+                });
+                $('.educational > ul').append(data);
+                data = '';
+                for (let i = 0; i < 6; i++) {
+                    data += '<div class="scale"></div>'
+                }
+                for (let i = 0; i < 3; i++) {
+                    data += '<div class="color"></div>'
+                }
+                $('.barChart').append(data);
+                let barChartScale = document.querySelectorAll('.scale');
+                let scaleCount = 5;
+                for (let i = 0; i < 6; i++) {
+                    barChartScale[i].style.setProperty('--scale', "'"+ scaleCount*5 +"'");
+                    scaleCount--;
+                }
+                let barChartColor = document.querySelectorAll('.barChart .color');
+                for (let i = 0; i < 3; i++) {
+                        barChartColor[i].style.height = `${res[i].quantity / 5 * 25}px`;
+                        barChartColor[i].style.left = `${i * 60}px`;
+                    }
+            });
         })
+      
+        const uri = "http://localhost:3000/activities";
+        fetch(uri, {method: 'GET'})
+        .then(res => {return res.json();
+        }).then(res => {
+            let activitiesEventsList = document.querySelectorAll(".activities ul");
+            let temp = '';
+            for(let i in res) {
+                temp += `
+                <li>${res[i].event}
+                    <a href="${res[i].href}"></a>
+                </li>
+                `
+            }
+            activitiesEventsList[0].innerHTML = temp;
+        });
     </script>
 </body>
 </html>

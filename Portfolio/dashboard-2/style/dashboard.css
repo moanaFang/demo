@@ -2,9 +2,7 @@
 #dashboard {
     font-size: 14px;
 }
-#dashboard,
-#dashboard > main > .container > .primary-title,
-#dashboard > main > .container > .sub-statistics {
+.row {
     display: flex;
 }
 /*nav*/
@@ -29,9 +27,22 @@
 #dashboard > main > .container {
     padding: 20px 40px;
 }
+
+#dashboard > main > .container > .mul-window {
+    display: flex;
+    flex-wrap: wrap;
+}
+#dashboard > main > .container > .mul-window > div{
+    width: 47%;
+    height: 18vw;
+    margin: 0 10px 20px 10px;
+    box-sizing: border-box;
+}
+/* main-primary-title */
 #dashboard > main > .container > .primary-title {
     font-weight: 900;
 }
+/* main-statistics */
 #dashboard > main > .container  > .primary-title,
 #dashboard > main > .container > .sub-statistics {
     margin-bottom: 20px;
@@ -43,7 +54,7 @@
 }
 #dashboard > main > .container > .primary-title,
 #dashboard > main > .container > .sub-statistics > div,
-#dashboard > main > .container > .mul-window {
+#dashboard > main > .container > .mul-window > div {
     background-color: white;
 }
 #dashboard > main > .container > .primary-title {
@@ -90,7 +101,86 @@
     font-size: 20px;
     font-weight: 900;
 }
-#dashboard > main > .container > .mul-window {
-    height: 35vw;
-    margin: auto;
+/* main-calendar */
+#dashboard > main > .container > .mul-window > .calendar > .monthes,
+#dashboard > main > .container > .mul-window > .calendar > .days > li {
+    font-size: 0px;
+}
+#dashboard > main > .container > .mul-window > .calendar > .monthes > li,
+#dashboard > main > .container > .mul-window > .calendar > .days > li {
+    display: inline-block;
+    font-size: 12px;
+    margin: 1px;
+}
+#dashboard > main > .container > .mul-window > .calendar > .monthes > li {
+    font-weight: 900;
+    color: #554A86;
+    width: 7%;
+}
+#dashboard > main > .container > .mul-window > .calendar > .monthes > li > div {
+    height: 10px;
+    background-color: #D5D4D5;
+}
+#dashboard > main > .container > .mul-window > .calendar > .days > li {
+    width: 13%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+/* main-educational */
+#dashboard .mul-window .educational > ul {
+    width: 40%;
+    margin-top: 15%;
+    float: left;
+}
+#dashboard .mul-window .educational > .barChart {
+    width: 60%;
+    float: right;
+}
+#dashboard .mul-window .educational .color,
+#dashboard .mul-window .educational span ~ div {
+    display: inline-block;
+}
+#dashboard .mul-window .educational div > span {
+    display: block;
+}
+#dashboard .mul-window .educational ul .color {
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    border-radius: 50%;
+}
+#dashboard .mul-window .educational .barChart {
+    position: relative;
+}
+#dashboard .mul-window .educational li:nth-of-type(1) .color,
+#dashboard .mul-window .educational .barChart > .color:nth-of-type(7) {
+    background-color: rgb(113, 50, 240);
+}
+#dashboard .mul-window .educational li:nth-of-type(2) .color, 
+#dashboard .mul-window .educational .barChart > .color:nth-of-type(8) {
+    background-color: #FFC000;
+}
+#dashboard .mul-window .educational li:nth-of-type(3) .color, 
+#dashboard .mul-window .educational .barChart > .color:nth-of-type(9) {
+    background-color: #34A25A;
+}
+#dashboard .mul-window .educational .barChart .scale::before {
+    content: var(--scale);
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    color: #DFDEDF;
+}
+#dashboard .mul-window .educational .barChart .scale {
+    border-bottom: 1px solid #DFDEDF;
+    width: 80%;
+    height: 25px;
+    position: relative;
+}
+#dashboard .mul-window .educational .barChart .color {
+    width: 40px;
+    height: 0;
+    margin-left: 30px;
+    position: absolute;
+    bottom: 0px;
 }

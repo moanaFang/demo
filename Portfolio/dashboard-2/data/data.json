@@ -1,5 +1,5 @@
 {
-    "statistics" : [
+    "statistics": [
         {
             "iconFa": "fa-school",
             "title": "Schools",
@@ -16,6 +16,36 @@
             "iconFa": "fa-users",
             "title": "Parents",
             "total": "1807"
+        }
+    ],
+    "educational": [
+        {
+            "school": "primary",
+            "quantity": 15
+        }, {
+            "school": "elementary",
+            "quantity": 32
+        }, {
+            "school": "preschool",
+            "quantity": 27
+        }
+    ],
+    "activities": [
+        {
+            "event": "Vaientines Grams by the Senior Classes",
+            "href": "https://www.etsy.com/market/valentine_gram"
+        },
+        {
+            "event": "Spring Sports Rally",
+            "href": "https://news.xcp.org/7960/sports/spring-sports-rally-a-tradition/"
+        },
+        {
+            "event": "Senior First Day Quad Takeover",
+            "href": "https://chswingspan.com/9409/news/senior-takeover-day/"
+        },
+        {
+            "event": "Freshman Orientation",
+            "href": "https://chswingspan.com/9409/news/senior-takeover-day/"
         }
     ]
 }
